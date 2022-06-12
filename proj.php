@@ -8,21 +8,79 @@
 </head>
 <body>
 <?php
+
 $txt ="hello world";
 $sh="k";
-$txt=$sh;
+$_vare =1.2;
+$bw =3;
+$bww= 34;
+// $txt=$sh;
 
-echo $txt."<h1>this is my project</h1>";
+$cars = array("Volvo", "BMW", "Toyota");
+$animals = array("cat", "lion", "dog");
 
-$_vare ="hello world"
-$__vare ="hello world"
-$2vare ="hello world"
-$_3vare ="hello world"
-$vare ="hello world"
-$var22 ="hello world"
-$varObE ="hello world"
+$num = 82329738.33232;
+$t = (int)$num;
+define("saa","djslkj");
+
+
+echo $_vare."".$txt. "" .$sh;
+echo $_vare."".$txt. "" .$sh . $txt;
+echo str_word_count($txt);
+echo strlen($txt);
+echo strrev($txt);
+echo strpos($txt, "o");
+echo str_replace("hello", "akram", $txt);
+
+echo "</br>".saa;
+echo $t;
+
+
+
+$cars[count($cars)-1] ="akk";
+for ($x = 0; $x <= count($cars)-1; $x++) {
+    echo  "</br>". $cars[$x];
+};
+
+
+
+echo rand(4,10);
+$sw= 9.3;
+echo abs($sw);
+echo max(round(2,5), round(3.5), round(1));
+echo $bw .=$bww;
+
+
+function rep_arr($arr1, $arr2) {
+
+    for($x=0; $x<=count($arr1)-1; $x++){
+       echo $arr1[$x]= $arr2[$x];
+
+    };
+};
+
+rep_arr($cars, $animals);
+echo $animals[1];
+
+
+// this is recursion function
+$nu = 10;
+function recur($num){
+   
+    if($num >= 0){
+        echo "</br>".$num. "+". $num. "=". $num + $num;
+        recur($num-1);
+    }
+
+};
+
+recur($nu);
+
+
+
 
 
 ?>
+
 </body>
 </html>
