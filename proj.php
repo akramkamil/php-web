@@ -43,10 +43,21 @@ for ($i=1; $i <=10 ; $i++) {
 
 
 
-
-
 <?php
 
+function su1($nt){
+  $nu= 1;
+
+  for ($i=1; $i <=$nt ; $i++) { 
+  
+    $nu = $i * $nu;
+
+  }
+
+  echo $nu;
+}
+
+su1(6)
 
 // $txt ="hello world";
 // $sh="k";
