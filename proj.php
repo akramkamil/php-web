@@ -22,15 +22,17 @@ td, th {
 
 </head>
 <body>
-
+<?php
+function tabl($sus){
+  ?>
 
 <table>
 <?php
-for ($i=1; $i <=10 ; $i++) { 
+for ($i=1; $i <=$sus ; $i++) { 
 
     echo "<tr>";
 
-    for ($j=1; $j <=10 ; $j++) { 
+    for ($j=1; $j <=$sus ; $j++) { 
         echo "<td>" . $j * $i . "</td>";   
         }
 
@@ -42,15 +44,16 @@ for ($i=1; $i <=10 ; $i++) {
 
 
 
-
-<?php
+<?php 
+}
+tabl(11);
 
 function su1($nt){
   $nu= 1;
 
   for ($i=1; $i <=$nt ; $i++) { 
   
-    $nu = $i * $nu;
+    $nu *= $i;
 
   }
 
